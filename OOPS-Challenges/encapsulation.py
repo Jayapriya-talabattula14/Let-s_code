@@ -5,7 +5,7 @@ from pycparser.c_ast import Return
 class Bank:
     def __init__(self,Name, Account_number, Balance):
         self.Name = Name
-        self.Account_number=Account_number
+        self.Account_number = Account_number
         self.Balance = Balance
 
     def Deposit(self,amount):
@@ -19,7 +19,7 @@ class Bank:
     def Total_Balance(self):
         return self.Balance
 
-user = Bank("Priya",987525, 122233)
+user = Bank("Priya", 987525, 122233)
 user.Deposit(3500)
 print(user.Total_Balance())
 
